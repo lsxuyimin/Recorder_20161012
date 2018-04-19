@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{D3B50654-914E-4B74-9375-14A3B741ACD2}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Recorder.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Recorder.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Recorder.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\Recorder.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\Recorder.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Recorder.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Recorder.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\Recorder.exe</OutputFile>
+      <AdditionalDependencies>WCDPcie/WCDPcieDriver.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BgDlg.cpp" />
+    <ClCompile Include="CheckCardDlg.cpp" />
+    <ClCompile Include="ChSelDlg.cpp" />
+    <ClCompile Include="ComboBoxRange.cpp" />
+    <ClCompile Include="DlgBarEx.cpp" />
+    <ClCompile Include="DlgBarExBottomAcq.cpp" />
+    <ClCompile Include="DlgBarExBottomPlay.cpp" />
+    <ClCompile Include="DlgBarExTopChnSel.cpp" />
+    <ClCompile Include="FftComplex.cpp" />
+    <ClCompile Include="FftConfDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MarkDlg.cpp" />
+    <ClCompile Include="MeasureAddDlg.cpp" />
+    <ClCompile Include="MeasureDlg.cpp" />
+    <ClCompile Include="MeasureEditDlg.cpp" />
+    <ClCompile Include="MeasureItem.cpp" />
+    <ClCompile Include="PhyCard.cpp" />
+    <ClCompile Include="PlayBar.cpp" />
+    <ClCompile Include="PopupPropertyDlg.cpp" />
+    <ClCompile Include="PopupRightDlg.cpp" />
+    <ClCompile Include="Product.cpp" />
+    <ClCompile Include="Recorder.cpp" />
+    <ClCompile Include="RecorderDoc.cpp" />
+    <ClCompile Include="RecorderView.cpp" />
+    <ClCompile Include="SaveAsDlg.cpp" />
+    <ClCompile Include="SaveDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="StoragePathDlg.cpp" />
+    <ClCompile Include="VirtualCard.cpp" />
+    <ClCompile Include="WatchDlg.cpp" />
+    <ClCompile Include="WaveData.cpp" />
+    <ClCompile Include="WndManage.cpp" />
+    <ClCompile Include="ZoomDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Recorder.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BgDlg.h" />
+    <ClInclude Include="CheckCardDlg.h" />
+    <ClInclude Include="ChSelDlg.h" />
+    <ClInclude Include="ComboBoxRange.h" />
+    <ClInclude Include="DlgBarEx.h" />
+    <ClInclude Include="DlgBarExBottomAcq.h" />
+    <ClInclude Include="DlgBarExBottomPlay.h" />
+    <ClInclude Include="DlgBarExTopChnSel.h" />
+    <ClInclude Include="FftComplex.h" />
+    <ClInclude Include="FftConfDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MarkDlg.h" />
+    <ClInclude Include="MeasureAddDlg.h" />
+    <ClInclude Include="MeasureDlg.h" />
+    <ClInclude Include="MeasureEditDlg.h" />
+    <ClInclude Include="MeasureItem.h" />
+    <ClInclude Include="MyDef.h" />
+    <ClInclude Include="PhyCard.h" />
+    <ClInclude Include="PlayBar.h" />
+    <ClInclude Include="PopupPropertyDlg.h" />
+    <ClInclude Include="PopupRightDlg.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="Recorder.h" />
+    <ClInclude Include="RecorderDoc.h" />
+    <ClInclude Include="RecorderView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SaveAsDlg.h" />
+    <ClInclude Include="SaveDlg.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StoragePathDlg.h" />
+    <ClInclude Include="VirtualCard.h" />
+    <ClInclude Include="WatchDlg.h" />
+    <ClInclude Include="WaveData.h" />
+    <ClInclude Include="WndManage.h" />
+    <ClInclude Include="ZoomDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00002.bmp" />
+    <Image Include="res\bmp00003.bmp" />
+    <Image Include="res\bmp00004.bmp" />
+    <Image Include="res\bmp00005.bmp" />
+    <Image Include="res\bmp00006.bmp" />
+    <Image Include="res\bmp00007.bmp" />
+    <Image Include="res\bmp_clos.bmp" />
+    <Image Include="res\bmp_mark.bmp" />
+    <Image Include="res\bmp_play.bmp" />
+    <Image Include="res\bmp_rest.bmp" />
+    <Image Include="res\bmp_scal.bmp" />
+    <Image Include="res\bmp_spee.bmp" />
+    <Image Include="res\c.bmp" />
+    <Image Include="res\Recorder.ico" />
+    <Image Include="res\RecorderDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\cur00001.cur" />
+    <CustomBuild Include="res\cur00002.cur" />
+    <CustomBuild Include="res\cur00003.cur" />
+    <CustomBuild Include="res\cur00004.cur" />
+    <CustomBuild Include="res\cursor_m.cur" />
+    <CustomBuild Include="res\cursor_z.cur" />
+    <CustomBuild Include="res\Recorder.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

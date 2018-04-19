@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Recorder - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\pc\AppData\Local\Temp\RSP2149.tmp" with contents
+[
+WCDPcie/WCDPcieDriver.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Recorder.pdb" /debug /machine:I386 /out:"Debug/Recorder.exe" /pdbtype:sept 
+.\Debug\BgDlg.obj
+.\Debug\CheckCardDlg.obj
+.\Debug\ChSelDlg.obj
+.\Debug\ComboBoxRange.obj
+.\Debug\DlgBarEx.obj
+.\Debug\DlgBarExBottomAcq.obj
+.\Debug\DlgBarExBottomPlay.obj
+.\Debug\DlgBarExTopChnSel.obj
+.\Debug\FftComplex.obj
+.\Debug\FftConfDlg.obj
+.\Debug\MainFrm.obj
+.\Debug\MarkDlg.obj
+.\Debug\MeasureAddDlg.obj
+.\Debug\MeasureDlg.obj
+.\Debug\MeasureEditDlg.obj
+.\Debug\MeasureItem.obj
+.\Debug\PhyCard.obj
+.\Debug\PlayBar.obj
+.\Debug\PopupPropertyDlg.obj
+.\Debug\PopupRightDlg.obj
+.\Debug\Product.obj
+.\Debug\Recorder.obj
+.\Debug\RecorderDoc.obj
+.\Debug\RecorderView.obj
+.\Debug\SaveAsDlg.obj
+.\Debug\SaveDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\StoragePathDlg.obj
+.\Debug\VirtualCard.obj
+.\Debug\WatchDlg.obj
+.\Debug\WaveData.obj
+.\Debug\WndManage.obj
+.\Debug\ZoomDlg.obj
+.\Debug\Recorder.res
+]
+Creating command line "link.exe @C:\Users\pc\AppData\Local\Temp\RSP2149.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+Recorder.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

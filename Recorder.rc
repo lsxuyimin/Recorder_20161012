@@ -1,0 +1,941 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Recorder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Recorder.ico"
+IDR_RECORDTYPE          ICON    DISCARDABLE     "res\\RecorderDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BMP_Close_Normal    BITMAP  DISCARDABLE     "res\\c.bmp"
+IDB_BMP_Minimize_Normal BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BMP_Restore_Focus   BITMAP  DISCARDABLE     "res\\bmp_rest.bmp"
+IDB_BMP_Restore_Normal  BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_BMP_Minimize_Focus  BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_BMP_Close_Focus     BITMAP  DISCARDABLE     "res\\bmp_clos.bmp"
+IDB_BMP_MARK_X          BITMAP  DISCARDABLE     "res\\bmp_mark.bmp"
+IDB_BMP_SCALE           BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+IDB_BMP_MARK_Y          BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+IDB_BMP_SCALE_BgGray    BITMAP  DISCARDABLE     "res\\bmp_scal.bmp"
+IDB_BMP_Play            BITMAP  DISCARDABLE     "res\\bmp_play.bmp"
+IDB_BMP_Pause           BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
+IDB_BMP_SpeedUp         BITMAP  DISCARDABLE     "res\\bmp00007.bmp"
+IDB_BMP_SpeedDown       BITMAP  DISCARDABLE     "res\\bmp_spee.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  40, 30
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE_Costum
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_WATCH_TimeDomain
+    BUTTON      ID_WATCH_FreqDomain
+    BUTTON      ID_WATCH_FreqDomainConf
+    SEPARATOR
+    BUTTON      ID_CTRL_StartAcq
+    BUTTON      ID_CTRL_StopAcq
+    SEPARATOR
+    BUTTON      ID_LAYOUT_Mode1
+    BUTTON      ID_LAYOUT_Mode2
+    BUTTON      ID_LAYOUT_Mode3
+    BUTTON      ID_LAYOUT_Mode4
+    SEPARATOR
+    BUTTON      ID_WATCH_PrePage
+    BUTTON      ID_WATCH_NextPage
+    SEPARATOR
+    BUTTON      ID_WATCH_Setting
+    SEPARATOR
+    BUTTON      ID_WATCH_ZoomIn
+    BUTTON      ID_WATCH_ZoomOut
+    BUTTON      ID_WATCH_None
+    SEPARATOR
+    BUTTON      ID_WATCH_ZoomReStore
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "连接设备",                    ID_APP_CONNECT
+        MENUITEM SEPARATOR
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE_Costum
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS_Costum
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "复制为文本",                  ID_EDIT_CopyText
+        MENUITEM "复制为图像",                  ID_EDIT_CopySelectedImage
+        MENUITEM "复制整个窗口为图像",          ID_MENUITEM32774
+        MENUITEM SEPARATOR
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+    END
+    POPUP "控制"
+    BEGIN
+        MENUITEM "开始采集",                    ID_CTRL_StartAcq
+        MENUITEM "停止采集",                    ID_CTRL_StopAcq
+    END
+    POPUP "观察"
+    BEGIN
+        POPUP "增加观察窗口"
+        BEGIN
+            MENUITEM "示波器",                      ID_WATCH_AddOsc
+            MENUITEM "频域",                        ID_WATCH_AddFreDomain
+        END
+        MENUITEM "重命名观察窗口",              ID_WATCH_RenameWatchDlg
+        MENUITEM "关闭观察窗口",                ID_WATCH_CloseWatchDlg
+        MENUITEM SEPARATOR
+        POPUP "栅格布局"
+        BEGIN
+            MENUITEM "1x1栅格",                     ID_LAYOUT_Mode1
+            MENUITEM "2x2栅格",                     ID_LAYOUT_Mode2
+            MENUITEM "3x3栅格",                     ID_LAYOUT_Mode3
+            MENUITEM "4x4栅格",                     ID_LAYOUT_Mode4
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "下一页",                      ID_WATCH_NextPage
+        MENUITEM "上一页",                      ID_WATCH_PrePage
+        MENUITEM SEPARATOR
+        MENUITEM "鼠标读数",                    ID_WATCH_None
+        MENUITEM "放大",                        ID_WATCH_ZoomIn
+        MENUITEM "缩小",                        ID_WATCH_ZoomOut
+        MENUITEM "恢复默认大小",                ID_WATCH_ZoomReStore
+        MENUITEM SEPARATOR
+        MENUITEM "设置",                        ID_WATCH_Setting
+        MENUITEM SEPARATOR
+    END
+    POPUP "测量"
+    BEGIN
+        MENUITEM "增加测量",                    ID_MEA_ADDMEASURE
+        MENUITEM "编辑测量",                    ID_MEA_EDITMEASURE
+        MENUITEM "删除测量",                    ID_MEA_DELMEASURE
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "用户手册",                    ID_APP_Help
+        MENUITEM "关于 Recorder(&A)...",        ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_WatchDlgPopup MENU DISCARDABLE 
+BEGIN
+    POPUP "A"
+    BEGIN
+        POPUP "增加观察窗口"
+        BEGIN
+            MENUITEM "示波器",                      ID_WATCH_AddOsc
+            MENUITEM "频域",                        ID_WATCH_AddFreDomain
+        END
+        MENUITEM "重命名观察窗口",              ID_WATCH_RenameWatchDlg
+        MENUITEM "关闭观察窗口",                ID_WATCH_CloseWatchDlg
+        MENUITEM SEPARATOR
+        MENUITEM "通道",                        ID_WATCH_ChSel
+        MENUITEM SEPARATOR
+        POPUP "栅格布局"
+        BEGIN
+            MENUITEM "1*1栅格",                     ID_LAYOUT_Mode1
+            MENUITEM "2*2栅格",                     ID_LAYOUT_Mode2
+            MENUITEM "3*3栅格",                     ID_LAYOUT_Mode3
+            MENUITEM "4*4栅格",                     ID_LAYOUT_Mode4
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "查看属性",                    ID_WATCH_Property
+        MENUITEM SEPARATOR
+        MENUITEM "增加测量",                    ID_MEA_ADDMEASURE
+    END
+END
+
+IDR_MENU_MeaDlgPopup MENU DISCARDABLE 
+BEGIN
+    POPUP "A"
+    BEGIN
+        MENUITEM "增加测量",                    ID_MEA_ADDMEASURE
+        MENUITEM "编辑测量",                    ID_MEA_EDITMEASURE
+        MENUITEM "删除测量",                    ID_MEA_DELMEASURE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 225, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Recorder"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,24,21,21,21
+    DEFPUSHBUTTON   "确定",IDOK,81,70,50,14,WS_GROUP
+    LTEXT           "海道普瞬态记录仪软件-V1.0",IDC_STATIC,74,27,108,8,
+                    SS_NOPREFIX
+    LTEXT           "南京海道普数据技术有限公司",IDC_STATIC,72,47,119,8,
+                    SS_NOPREFIX
+END
+
+IDD_RECORDER_FORM DIALOG DISCARDABLE  0, 0, 640, 316
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "InitialMark",IDC_STATIC_InitialMark,57,58,47,21,NOT 
+                    WS_VISIBLE
+END
+
+IDD_DIALOG_WATCHDLG DIALOGEX 0, 0, 187, 96
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,82,82,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,13,82,50,14,NOT WS_VISIBLE
+    LTEXT           "window",IDC_STATIC_Title,12,7,30,10,NOT WS_VISIBLE | 
+                    NOT WS_GROUP,WS_EX_TRANSPARENT
+    LTEXT           "0,0",IDC_STATIC_CursorRead,89,21,63,13,NOT WS_VISIBLE | 
+                    NOT WS_GROUP,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG_BarEx DIALOG DISCARDABLE  0, 0, 666, 21
+STYLE WS_CHILD
+FONT 11, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,660,0,6,21,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,647,0,11,21,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_RATE,34,4,44,82,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LENGTH,116,4,44,82,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "采样频率",IDC_STATIC,0,6,32,10
+    LTEXT           "采样长度",IDC_STATIC,83,6,32,10
+    LTEXT           "触发通道",IDC_STATIC,166,6,32,10
+    COMBOBOX        IDC_COMBO_TRIGGER_CHANNEL,198,4,44,82,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "触发电平",IDC_STATIC,540,11,32,10,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Slider1",IDC_SLIDER_TRIGGER_LEVEL,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,526,13,42,8
+    LTEXT           "量程",IDC_STATIC,575,11,17,10,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    COMBOBOX        IDC_COMBO_RANGE,589,0,44,82,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "触发方式",IDC_STATIC,247,6,32,10
+    COMBOBOX        IDC_COMBO_TRIGGER_MODE,279,4,44,82,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "0.00V",IDC_STATIC_TRIGGER_LEVEL,544,2,31,9,NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "触发上限",IDC_STATIC,434,6,32,10
+    LTEXT           "触发下限",IDC_STATIC,329,6,32,10
+    CONTROL         "Slider1",IDC_SLIDER_TRIGGER_UpperLimit,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    466,7,42,8
+    CONTROL         "Slider1",IDC_SLIDER_TRIGGER_LowerLimit,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    362,7,42,8
+    LTEXT           "-.- -V",IDC_STATIC_TRIGGER_UpperLimit,512,6,24,8
+    LTEXT           "-.- -V",IDC_STATIC_TRIGGER_LowerLimit,404,6,24,8
+END
+
+IDD_DIALOG_PopupRight DIALOG DISCARDABLE  0, 0, 108, 258
+STYLE WS_POPUP | WS_BORDER
+FONT 9, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,60,242,27,14
+    PUSHBUTTON      "取消",IDCANCEL,21,242,27,14
+    GROUPBOX        "模拟采集卡设置",IDC_STATIC,3,7,100,227
+    LTEXT           "波形：",IDC_STATIC,15,65,58,10
+    LTEXT           "频率：",IDC_STATIC,15,105,58,10
+    COMBOBOX        IDC_COMBO_WavefForm,16,77,75,51,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Frequency,16,117,75,115,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "振幅",IDC_STATIC,14,141,78,75
+    LTEXT           "最大：",IDC_STATIC,21,153,58,10
+    LTEXT           "最小：",IDC_STATIC,21,184,58,10
+    EDITTEXT        IDC_EDIT_AmpMax,23,165,47,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AmpMin,23,197,47,14,ES_AUTOHSCROLL
+    LTEXT           "mV",IDC_STATIC,72,168,14,10
+    LTEXT           "mV",IDC_STATIC,71,200,14,10
+    LTEXT           "通道：",IDC_STATIC,15,28,58,10
+    COMBOBOX        IDC_COMBO_ChnIndex,16,40,75,151,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_BGDLG DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_BgDlg,"SysTabControl32",0x0,0,0,187,96
+END
+
+IDD_DIALOG_BarExBottomAcq DIALOG DISCARDABLE  0, 0, 508, 12
+STYLE WS_CHILD
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,487,0,21,12,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,465,0,27,12,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_RATE,177,0,44,82,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "采样频率",IDC_STATIC,131,2,32,10
+    LTEXT           "触发电平",IDC_STATIC,377,2,32,10
+    CONTROL         "Slider1",IDC_SLIDER_TRIGGER_LEVEL,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,409,3,50,8
+    PUSHBUTTON      "REC",IDC_BUTTON1,3,0,26,12
+    PUSHBUTTON      "ACQ",IDC_BUTTON2,35,0,26,12
+    PUSHBUTTON      "STOP",IDC_BUTTON3,65,0,26,12
+    LTEXT           "acq",IDC_STATIC,259,2,45,10
+END
+
+IDD_DIALOG_BarExBottomPlay DIALOG DISCARDABLE  0, 0, 508, 18
+STYLE WS_CHILD
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,487,0,21,18,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,465,0,27,18,NOT WS_VISIBLE
+    LTEXT           "采集状态",IDC_STATIC_AcqStatus,311,3,32,10
+    CONTROL         "play",IDC_RADIO_Play,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | WS_GROUP,3,1,19,16
+    CONTROL         "pause",IDC_RADIO_Pause,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE,26,1,19,16
+    PUSHBUTTON      "Button1",IDC_BUTTON_SpeedUp,49,1,12,7,BS_BITMAP
+    PUSHBUTTON      "Button1",IDC_BUTTON_SpeedDown,49,10,12,7,BS_BITMAP
+END
+
+IDD_DIALOG_CheckCard DIALOG DISCARDABLE  0, 0, 186, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "新建采集任务"
+FONT 9, "黑体"
+BEGIN
+    CONTROL         "模拟采集卡",IDC_RADIO_Demo,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,19,23,56,10
+    CONTROL         "检测到采集卡",IDC_RADIO_PhyCard,"Button",
+                    BS_AUTORADIOBUTTON,19,52,64,10
+    CONTROL         "打开已有数据",IDC_RADIO_OpenExistData,"Button",
+                    BS_AUTORADIOBUTTON,19,107,67,13
+    DEFPUSHBUTTON   "确定",IDOK,100,150,50,14
+    PUSHBUTTON      "取消",IDCANCEL,37,150,50,14,NOT WS_VISIBLE
+    LISTBOX         IDC_LIST_PhyCard,88,51,76,42,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "使用模拟通道",IDC_STATIC,76,24,51,10
+    COMBOBOX        IDC_COMBO_DemoChn,130,22,31,66,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "个",IDC_STATIC,163,24,16,10
+    EDITTEXT        IDC_EDIT_ExistDataPath,20,123,144,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BUTTON_Browse,122,109,37,12
+END
+
+IDD_DIALOG_Measure DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,90,82,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,17,82,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC_TitleBar,"Static",SS_GRAYRECT | NOT 
+                    WS_VISIBLE,0,1,187,14
+END
+
+IDD_DIALOG_MeasureAdd DIALOG DISCARDABLE  0, 0, 282, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加测量"
+FONT 9, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,216,24,50,14
+    PUSHBUTTON      "取消",IDCANCEL,216,49,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,197,7,1,
+                    108
+    LTEXT           "选择测量通道",IDC_STATIC,15,16,68,8
+    COMBOBOX        IDC_COMBO_MeaChannel,14,28,176,166,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择测量类型",IDC_STATIC,15,47,68,8
+    COMBOBOX        IDC_COMBO_MeaType,14,58,176,166,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择曲线图的哪一部分来测量",IDC_STATIC,15,76,147,8
+    COMBOBOX        IDC_COMBO_MeaPart,14,88,176,184,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_MeasureEdit DIALOG DISCARDABLE  0, 0, 282, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "编辑测量"
+FONT 9, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,216,24,50,14
+    PUSHBUTTON      "取消",IDCANCEL,216,49,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,197,7,1,
+                    108
+    LTEXT           "选择测量通道",IDC_STATIC,15,16,68,8
+    COMBOBOX        IDC_COMBO_MeaChannel,14,28,176,57,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择测量类型",IDC_STATIC,15,47,68,8
+    COMBOBOX        IDC_COMBO_MeaType,14,58,176,86,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择曲线图的哪一部分来测量",IDC_STATIC,15,76,147,8
+    COMBOBOX        IDC_COMBO_MeaPart,14,88,176,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_Mark DIALOG DISCARDABLE  0, 0, 187, 117
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,90,103,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,17,103,50,14,NOT WS_VISIBLE
+    LTEXT           "MarkDlg",IDC_STATIC,4,4,31,10,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_Zoom DIALOG DISCARDABLE  0, 0, 187, 117
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,90,103,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "取消",IDCANCEL,17,103,50,14,NOT WS_VISIBLE
+    LTEXT           "ZoomDlg",IDC_STATIC,4,4,31,10,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_StoragePath DIALOG DISCARDABLE  0, 0, 270, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "存储路径"
+FONT 9, "黑体"
+BEGIN
+    CONTROL         "覆盖当前文件",IDC_RADIO_OverrideDoc,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,16,14,66,12
+    CONTROL         "新建文件",IDC_RADIO_NewDoc,"Button",BS_AUTORADIOBUTTON,
+                    16,33,68,12
+    DEFPUSHBUTTON   "确定",IDOK,186,90,40,12
+    PUSHBUTTON      "取消",IDCANCEL,28,91,45,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_NewPath,30,71,216,12,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_WorkPlace,29,47,224,22
+END
+
+IDD_DIALOG_Save DIALOG DISCARDABLE  0, 0, 309, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保存"
+FONT 9, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,183,80,50,14
+    PUSHBUTTON      "取消",IDCANCEL,85,80,50,14
+    LTEXT           "Static",IDC_STATIC_WorkPlace,21,31,263,23
+    EDITTEXT        IDC_EDIT_SavePath,20,59,267,13,ES_AUTOHSCROLL
+    LTEXT           "数据保存路径：",IDC_STATIC,17,15,128,11
+END
+
+IDD_DIALOG_SaveAs DIALOG DISCARDABLE  0, 0, 309, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "另存为"
+FONT 9, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,183,80,50,14
+    PUSHBUTTON      "取消",IDCANCEL,85,80,50,14
+    LTEXT           "Static",IDC_STATIC_WorkPlace,21,31,263,23
+    EDITTEXT        IDC_EDIT_SavePath,20,59,267,13,ES_AUTOHSCROLL
+    LTEXT           "数据另存为路径：",IDC_STATIC,17,15,128,11
+END
+
+IDD_DIALOG_PopupProperty DIALOG DISCARDABLE  0, 0, 108, 258
+STYLE WS_POPUP | WS_BORDER
+FONT 9, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,60,242,27,14
+    PUSHBUTTON      "取消",IDCANCEL,21,242,27,14
+    GROUPBOX        "属性",IDC_STATIC,3,7,100,227
+    LTEXT           "信号源：",IDC_STATIC,7,29,45,10
+    LTEXT           "采样率：",IDC_STATIC,7,85,45,10
+    LTEXT           "采样长度：",IDC_STATIC,7,113,45,10
+    LTEXT           "采样时间：",IDC_STATIC,7,141,45,10
+    LTEXT           "量程：",IDC_STATIC,7,169,45,10
+    LTEXT           "1",IDC_STATIC_Source,23,40,45,10
+    LTEXT           "3",IDC_STATIC_SamplingRate,23,96,45,10
+    LTEXT           "4",IDC_STATIC_SamplingLen,23,124,45,10
+    LTEXT           "5",IDC_STATIC_SamplingTime,23,152,45,10
+    LTEXT           "6",IDC_STATIC_Range,24,180,45,10
+    LTEXT           "通道：",IDC_STATIC,8,57,45,10
+    LTEXT           "2",IDC_STATIC_ChNum,25,68,45,10
+END
+
+IDD_DIALOG_ChSel DIALOG DISCARDABLE  0, 0, 127, 310
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "通道选择"
+FONT 10, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,66,289,35,14
+    PUSHBUTTON      "取消",IDCANCEL,23,289,35,14
+    CONTROL         "List1",IDC_LIST_CH,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,15,28,98,256
+    LTEXT           "请选择要显示的通道，最大可同时显示4个通道：",
+                    IDC_STATIC_Tip,7,7,113,20
+END
+
+IDD_DIALOG_BarExTopChnSel DIALOG DISCARDABLE  0, 0, 550, 18
+STYLE WS_CHILD
+FONT 11, "黑体"
+BEGIN
+    LTEXT           "信号一",IDC_STATIC_ChnSel1,3,6,25,8
+    COMBOBOX        IDC_COMBO_ChnRange1,29,3,53,235,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "信号二",IDC_STATIC_ChnSel2,99,6,25,8
+    COMBOBOX        IDC_COMBO_ChnRange2,125,3,53,238,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "信号三",IDC_STATIC_ChnSel3,198,6,25,8
+    COMBOBOX        IDC_COMBO_ChnRange3,225,3,53,238,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "信号四",IDC_STATIC_ChnSel4,299,6,25,8
+    COMBOBOX        IDC_COMBO_ChnRange4,325,3,53,239,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_FftConf DIALOG DISCARDABLE  0, 0, 179, 156
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "黑体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,100,131,50,14
+    PUSHBUTTON      "取消",IDCANCEL,36,131,50,14
+    LTEXT           "频域bins",IDC_STATIC,22,20,35,8
+    LTEXT           "窗口功能",IDC_STATIC,22,41,35,8
+    LTEXT           "比例",IDC_STATIC,22,62,35,8
+    LTEXT           "对数单元",IDC_STATIC,22,83,35,8
+    COMBOBOX        IDC_COMBO_FftBins,70,18,69,143,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_WindowMode,70,39,69,143,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LogUnit,70,81,69,143,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "阻抗",IDC_STATIC,22,104,35,8
+    EDITTEXT        IDC_EDIT_Impedance,70,103,55,12,ES_AUTOHSCROLL
+    LTEXT           "Ω",IDC_STATIC,129,105,11,8
+    CONTROL         "对数",IDC_RADIO_Logarithm,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,113,62,27,12
+    CONTROL         "线性",IDC_RADIO_Linear,"Button",BS_AUTORADIOBUTTON,68,
+                    62,27,12
+    GROUPBOX        "",IDC_STATIC,7,7,165,142
+    LTEXT           "Tips:阻抗范围1-9999的整数",IDC_STATIC_Tips,61,119,107,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Recorder Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Recorder\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Recorder.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Recorder 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DIALOG_PopupRight, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_DIALOG_CheckCard, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_DIALOG_MeasureAdd, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOG_MeasureEdit, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOG_StoragePath, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DIALOG_Save, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_DIALOG_SaveAs, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_DIALOG_PopupProperty, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_DIALOG_ChSel, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 303
+    END
+
+    IDD_DIALOG_FftConf, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_ZoomIn       CURSOR  DISCARDABLE     "res\\cursor_z.cur"
+IDC_CURSOR_ZoomOut      CURSOR  DISCARDABLE     "res\\cur00002.cur"
+IDC_CURSOR_ZoomDrag     CURSOR  DISCARDABLE     "res\\cur00001.cur"
+IDC_CURSOR_MarkDragY    CURSOR  DISCARDABLE     "res\\cur00004.cur"
+IDC_CURSOR_MarkDragX    CURSOR  DISCARDABLE     "res\\cursor_m.cur"
+IDC_CURSOR_ZoomRestore  CURSOR  DISCARDABLE     "res\\cur00003.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Recorder\n\nRecord\n\n\nRecorder.Document\nRecord Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Recorder"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WATCH_Setting        "模拟采集卡设置\n设置"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WATCH_FreqDomain     "频域模式"
+    ID_WATCH_TimeDomain     "时域模式"
+    ID_WATCH_FreqDomainConf "频域分析设置"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Recorder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
